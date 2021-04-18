@@ -27,11 +27,6 @@ Gem::Specification.new do |s|
   s.add_dependency "image_processing", "~> 1.1"
   s.add_dependency "mimemagic", ">= 0.3.0"
   s.add_dependency "addressable", "~> 2.6"
-  if RUBY_ENGINE == 'jruby'
-    s.add_development_dependency 'activerecord-jdbcpostgresql-adapter'
-  else
-    s.add_development_dependency "pg"
-  end
   s.add_development_dependency "rails", ">= 5.0.0"
   s.add_development_dependency "cucumber", "~> 2.3"
   s.add_development_dependency "rspec", "~> 3.4"
