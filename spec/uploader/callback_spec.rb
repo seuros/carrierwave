@@ -4,11 +4,11 @@ describe CarrierWave::Uploader do
   describe "callback isolation" do
     let(:default_before_callbacks) do
       [
+        :check_size!,
         :check_extension_whitelist!,
         :check_extension_blacklist!,
         :check_content_type_whitelist!,
         :check_content_type_blacklist!,
-        :check_size!,
         :process!
       ]
     end
